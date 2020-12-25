@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--fonte-main);
 }
 :root {
     --color-black: #000000;
+    --fonte-main:'Merriweather', serif;;
 }
 .header-header {
     background-color: var(--color-black);
@@ -30,7 +33,12 @@
 }
 .menu-1 li a {
     text-decoration: none;
+    color:black;
+    padding: 5px;
     
+}
+.menu-1 li a:hover {
+    border: 1px solid black;
 }
 .header-main-2 {
     width: 450px;
@@ -48,7 +56,18 @@
 }
 .menu-2 li a {
     text-decoration: none;
+    color:black;
+    padding: 5px;
     
+}
+.menu-2 li a:hover {
+    border: 1px solid black;
+}
+.header-banner {
+    background-image: url(img/banner-3.jpg);
+    background-size: cover;
+    height: 500px;
+    color: white;
 }
 .header-banner-1 {
     display: flex;
@@ -59,7 +78,7 @@
     margin-top: 20px;
 }
 .header-banner-1 > .banner-image {
-    background-image: url(img/banner-2.jpg);
+    
     background-size: cover;
     width: 40%;
     height: 500px;
