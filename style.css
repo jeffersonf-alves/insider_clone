@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 :root {
     --color-black: #000000;
-    --fonte-main:'Merriweather', serif;;
+    --fonte-main:'Merriweather', serif;
 }
 .header-header {
     background-color: var(--color-black);
@@ -19,6 +21,7 @@
     display: flex;
     justify-content: space-around;
     padding: 12px;
+    flex-wrap: wrap;
     
 }
 .header-main-1 {
@@ -63,30 +66,202 @@
 .menu-2 li a:hover {
     border: 1px solid black;
 }
+.menu-option-2 {
+    display: none;
+}
 .header-banner {
+    display: flex;
+    flex-direction: column-reverse;
     background-image: url(img/banner-3.jpg);
     background-size: cover;
-    height: 500px;
+    background-attachment: fixed;
+    height: 600px;
     color: white;
 }
-.header-banner-1 {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 15px;
-    width: 900px;
+.banner-text {
+    width: 500px;
     margin: auto;
-    margin-top: 20px;
 }
-.header-banner-1 > .banner-image {
+.banner-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.banner-main > div {
+    width: 450px;
+    height: 620px;
+    background-color: tomato;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
     
+}
+
+.banner-main-1 {
+    background-image: url(img/image-woman/banner-1.jpg);
     background-size: cover;
-    width: 40%;
-    height: 500px;
-    border: 2px solid black;
-    
+}
+.banner-main-2 {
+    background-image: url(img/image-woman/banner-2-2.jpg);
+    background-size: cover;
+}
+.banner-main-3 {
+    background-image:url(img/image-woman/banner-3.jpg);
+    background-size: cover;
+}
+.title-products {
+    text-align: center;
+    margin: 50px;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.products > div {
+    width: 400px;
+    height: 485px;
+    margin-top: 15px;
+    background-color:;
+    text-align: center;
     
 }
-.header-banner-1 > .banner-text {
-    width: 60%;
-    padding: 15px;
+
+.products-image {
+    width: 250px ;
+    height:300px ;
+}
+.products-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.content-1 {
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Lalezar', cursive !important;
+    
+}
+.content-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+
+}
+.content-2 > div {
+    width: 300px;
+    margin-top: 20px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.content-2 > p, h3 {
+    padding: 10px;
+}
+.content-2-text {
+    color:  	#191970;
+}
+.content-2-text-main {
+    color: 	#808080;
+}
+
+.footer-main {
+
+    background-color: #000000;
+    height: 100px;
+    margin-top: 120px;
+    color: white;
+    text-align: center;
+
+}
+.footer-main > div {
+    display: flex;
+    justify-content: center;
+}
+.footer-main > p {
+   
+}
+
+@media only screen and (max-width:925px) {
+    .header-main-1 {
+        display: none;
+    }
+    .header-main-2 {
+        display: none;
+    }
+    .header-main-3 {
+        display: none;
+    }
+    .menu-option-2 {
+        display: flex;
+    }
+    .menu-option-2 img {
+        width: 45px;
+        height: 35px;
+        
+    }
+    
+}
+@media only screen and (max-width:1063px) {
+    .banner-main > div {
+        width: 400px;
+        height: 500px;
+        background-color: tomato;
+        margin-top: 30px;
+    }
+    
+}
+@media only screen and (max-width:513px) {
+    .banner-text {
+        width: 400px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:414px) {
+    .banner-text {
+        width: 300px;
+        margin: auto;
+    }
+    .products > div {
+        width: 300px;
+        height: 400px;
+        margin-top: 15px;
+    }
+    .products-image {
+        width: 160px ;
+        height: 210px ;
+    
+    }
+    .banner-main > div {
+        width: 350px;
+        height: 460px;
+        background-color: tomato;
+        margin-top: 30px;
+        border-radius: 10px;
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30px;
+        
+    }
+}
+footer {
+    margin-top: 30px;
+    height: 600px;
+    background-color: wheat;
 }
