@@ -192,10 +192,23 @@
     display: flex;
     justify-content: center;
 }
-.footer-main > p {
-   
+.menu-mobile {
+    display: none;
+    list-style-type:none;
+    width: 100%;
+    margin-top: 8px;
 }
-
+.menu-mobile-1 > li {
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    
+}
+.menu-mobile a {
+    text-decoration: none;
+    color: black;
+}
 @media only screen and (max-width:925px) {
     .header-main-1 {
         display: none;
@@ -208,12 +221,19 @@
     }
     .menu-option-2 {
         display: flex;
+        width: 80%;
+        justify-content: space-around;
+    
+        
     }
     .menu-option-2 img {
         width: 45px;
         height: 35px;
+        cursor: pointer;
         
     }
+       
+
     
 }
 @media only screen and (max-width:1063px) {

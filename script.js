@@ -38,3 +38,15 @@ function backTshirtPerson() {
     let personIMG = document.getElementById('person');
     personIMG.src = "img/products/personalize-1.png";
 }
+
+let btnMobile = document.getElementById('btnMenu');
+
+btnMobile.addEventListener('click', function() {
+    let menuMobile = document.getElementById('menuMobile');
+
+    if (menuMobile.style.display == "none") {
+        menuMobile.style.display = "block";
+    } else {
+        menuMobile.style.display = "none";
+    }
+});
