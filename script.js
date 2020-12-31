@@ -39,14 +39,15 @@ function backTshirtPerson() {
     personIMG.src = "img/products/personalize-1.png";
 }
 
-let btnMobile = document.getElementById('btnMenu');
-
-btnMobile.addEventListener('click', function() {
+function btnMenu() {
     let menuMobile = document.getElementById('menuMobile');
 
-    if (menuMobile.style.display == "none") {
-        menuMobile.style.display = "block";
+    if(menuMobile.style.display == "none") {
+        menuMobile.style.display = "block";  
     } else {
         menuMobile.style.display = "none";
     }
-});
+
+}
+    
+
